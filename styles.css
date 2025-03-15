@@ -88,6 +88,9 @@
 .achv1, .achv2
 {
     margin-left: -40px;
+    transition: linear 1s;
+    animation-name: achv-card-transition;
+    animation-duration: 1s;
 }
 
 .achv1 img, .achv2 img
@@ -105,4 +108,17 @@
 {
     display: flex;
     justify-content: space-between;
+}
+
+#achv1-d, #achv2-d
+{
+    display: none;
+}
+
+@keyframes achv-card-transition
+{
+    0%{opacity: 0.3;}
+    30%{opacity: 0.5;}
+    70%{opacity: 0.8;}
+    100%{opacity: 1;}
 }
